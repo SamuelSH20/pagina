@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPR</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
+    <script src="script-p.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo-p.css">
+</head>
+<body bgcolor="#333333">
+    <h1 class="titulo">CAMISETA 2024 - 2026</h1>
+    <h3>Tienes 6 opciones:</h3>
+    <center>
+        <section>
+            <img src="CAMISETA1.jpg" onclick="elegirCamiseta(1)">
+            <img src="CAMISETA2.jpg" onclick="elegirCamiseta(2)">
+            <img src="CAMISETA3.jpg" onclick="elegirCamiseta(3)">
+            <img src="CAMISETA4.jpg" onclick="elegirCamiseta(4)">
+            <img src="CAMISETA5.jpg" onclick="elegirCamiseta(5)">
+            <img src="CAMISETA6.jpg" onclick="elegirCamiseta(6)">
+        </section>
+        <br>
+        <br>
+        <br>
+    </center>
+        <div id="mensajeContainer">
+            <!-- Mensaje encima del área del audio -->
+            <div id="mensaje">DISFRUTA LA MÚSICA</div>
+
+            <!-- Área del audio con autoplay (puedes quitar el atributo "muted") -->
+            <audio id="siaAudio" controls preload="auto" autoplay volume="1">
+                <source src="CUEVITA.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        <center><h6>Autor: Nehemias Samuel Huayaney</h6></center>
+</body>
+</html>
