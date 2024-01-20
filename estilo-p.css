@@ -1,0 +1,103 @@
+h1 {
+    color:white
+}
+h2{
+    color:aquamarine
+}
+    section {
+    display: flex;
+    width: 900px;
+    height: 430px;   
+}
+
+h3 {
+color:antiquewhite;
+}
+h6 {
+color: white;
+}
+span {
+    color: wheat;
+}
+.titulo {
+    background-color: #000000; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+}
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border: 2px solid white;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+section {
+    display: flex; 
+    width: 600px;
+    height: 430px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.logo {
+    width: 200px;
+    height: auto; 
+}
+
+#siaAudio {
+    position: -ms-page;
+    top: 1%;
+    right: 1%;
+}
+
+/*---------------------------------------*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section img {
+    animation: fadeIn 3s ease-in-out; /* Aplica la animación fadeIn a las imágenes en la sección */
+    cursor: pointer;
+}
+
+/* Estilo para el contenedor del mensaje */
+#mensajeContainer {
+    position: relative;
+}
+
+/* Estilo para el mensaje */
+#mensaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente blanco */
+    padding: 10px;
+    border-radius: 5px;
+}
